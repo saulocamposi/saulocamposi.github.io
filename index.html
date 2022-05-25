@@ -13,33 +13,21 @@
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
 </head>
 
 <body id="top">
 
-	<header id="header">
-		<a href="#" class="image avatar"><img src="https://avatars3.githubusercontent.com/u/5776988?v=3&s=460" alt="" /></a>
-		<h1><strong>Software Developer</strong>, coding for<br />
-				FrontEnd and BackEnd solutions <br />
-				crafted by <a href="#">Saulo Campos</a>.</h1>
-	</header>
+	<header id="header"></header>
 
 	<!-- Main -->
 	<div id="main">
-
+		
 		<!-- One -->
 		<section id="one">
-			<header class="major">
-				<h2>Coding for Web<br />
-							</h2>
-			</header>
-			<p>Software Developer graduated in Computer Science since 2008, mostly working on 
-			   projects for web platforms, constantly lerning new technologies.
-			   My personal projects aims to create softwares for helping on trading cryptocurrencies and the use of APIs provided by
-			   those exchanges. The website CalculadoraBitcoin.com.br as exampĺe has different repositories using different technologies
-			   for expose the front and back end (as picture and link below).
-			   As complement of CalculadoraBitcoin there is a couple other projects for complementing management on trading of cryptocurrencies.
-			</p>
+			
+			<header class="major" id="description"></header>
+
 			
 			<ul class="actions">
 				<li><a href="CV-Saulo_Campos.pdf" class="button">My curriculum</a></li>
@@ -48,25 +36,7 @@
 		</section>
 
 		<!-- Two -->
-		<section id="two">
-			<h2>Recent Work</h2>
-			<div class="row">
-				<article class="6u 12u$(xsmall) work-item">
-					<a href="images/fulls/calc.png" class="image fit thumb"><img src="images/thumbs/calc.png" alt="" /></a>
-					<h3>Calculadora Bitcoin</h3>
-					<p>Implemented using AngularJS Bootstrap 4 <a href="http://www.calculadorabitcoin.com.br/">Check this out</a></p>
-				</article>
-				<article class="6u$ 12u$(xsmall) work-item">
-					<a href="images/fulls/projects.png" class="image fit thumb"><img src="images/thumbs/thumb_projects.png" alt="" /></a>
-					<h3>Projects in Progress</h3>
-					<p>List of projects in progress to production</p>
-				</article>
-				
-				
-
-			</div>
-			
-
+		<section id="two">		
 		</section>
 
 
@@ -74,19 +44,9 @@
 	</div>
 
 	<!-- Footer -->
-	<footer id="footer">
-		<ul class="icons">
-			<li><a href="https://twitter.com/sauleraleary" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-			<li><a href="https://github.com/saulocamposi" class="icon fa-github"><span class="label">Github</span></a></li>
-			<li><a href="mailto:saulocamposi@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-			<li><a href="https://www.linkedin.com/in/saulo-campos-1431b7148" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-		</ul>
-		<ul class="copyright">
-			<li>&copy; Saulo Campos</li>
-			<!-- XXX: <li>Design: <a href="#"></a></li> -->
-
-		</ul>
+	<footer id="footer">		
 	</footer>
+	
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
@@ -95,7 +55,12 @@
 	<script src="assets/js/util.js"></script>
 	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="assets/js/main.js"></script>
-
+	<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	<script src="components/index.js" type="text/babel"></script>
+	<script src="components/header.js" type="text/babel"></script>
+	<script src="components/socialmedia.js" type="text/babel"></script>
 </body>
 
 </html>
