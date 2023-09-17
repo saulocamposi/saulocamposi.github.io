@@ -4,45 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Insert Form</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>Data Insert Form</h1>
-    <form action="/api/data" method="POST">
-      <label for="resume">Resume:</label>
-      <textarea id="resume" name="resume" rows="4" cols="50" required></textarea
-      ><br /><br />
+  <body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+      <h1 class="text-3xl font-semibold text-gray-800 mb-4">
+        Data Insert Form
+      </h1>
+      <form
+        action="/api/data"
+        method="POST"
+        class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+      >
+        <div class="mb-4">
+          <label for="resume" class="block text-gray-700 text-sm font-bold mb-2"
+            >Resume:</label
+          >
+          <textarea
+            id="resume"
+            name="resume"
+            rows="4"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            required
+          ></textarea>
+        </div>
 
-      <label for="education">Education:</label>
-      <textarea
-        id="education"
-        name="education"
-        rows="4"
-        cols="50"
-        required
-      ></textarea
-      ><br /><br />
+        <div class="mb-4">
+          <label
+            for="education"
+            class="block text-gray-700 text-sm font-bold mb-2"
+            >Education:</label
+          >
+          <textarea
+            id="education"
+            name="education"
+            rows="4"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            required
+          ></textarea>
+        </div>
 
-      <label for="skills_summary">Skills Summary:</label>
-      <textarea
-        id="skills_summary"
-        name="skills_summary"
-        rows="4"
-        cols="50"
-        required
-      ></textarea
-      ><br /><br />
+        <div class="mb-4">
+          <label
+            for="skills_summary"
+            class="block text-gray-700 text-sm font-bold mb-2"
+            >Skills Summary:</label
+          >
+          <textarea
+            id="skills_summary"
+            name="skills_summary"
+            rows="4"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            required
+          ></textarea>
+        </div>
 
-      <label for="profession_experience">Professional Experience:</label>
-      <textarea
-        id="profession_experience"
-        name="profession_experience"
-        rows="4"
-        cols="50"
-        required
-      ></textarea
-      ><br /><br />
+        <div class="mb-6">
+          <label
+            for="profession_experience"
+            class="block text-gray-700 text-sm font-bold mb-2"
+            >Professional Experience:</label
+          >
+          <textarea
+            id="profession_experience"
+            name="profession_experience"
+            rows="4"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            required
+          ></textarea>
+        </div>
 
-      <input type="submit" value="Submit" />
-    </form>
+        <div class="flex items-center justify-between">
+          <button
+            type="submit"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
