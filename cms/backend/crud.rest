@@ -1,0 +1,14 @@
+#name Create New Data Entry
+POST http://localhost:3000/api/data
+Content-Type: application/json
+
+{
+  "resume": "Sample Resume Text",
+  "education": "Sample Education Text",
+  "skills_summary": "Sample Skills Summary Text",
+  "profession_experience": "Sample Profession Experience Text"
+}
+###
+# Get All Data Entries
+GET http://localhost:3000/api/data
+

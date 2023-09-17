@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Insert Form</title>
+  </head>
+  <body>
+    <h1>Data Insert Form</h1>
+    <form action="/api/data" method="POST">
+      <label for="resume">Resume:</label>
+      <textarea id="resume" name="resume" rows="4" cols="50" required></textarea
+      ><br /><br />
+
+      <label for="education">Education:</label>
+      <textarea
+        id="education"
+        name="education"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br /><br />
+
+      <label for="skills_summary">Skills Summary:</label>
+      <textarea
+        id="skills_summary"
+        name="skills_summary"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br /><br />
+
+      <label for="profession_experience">Professional Experience:</label>
+      <textarea
+        id="profession_experience"
+        name="profession_experience"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
